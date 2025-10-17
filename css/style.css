@@ -343,9 +343,7 @@ footer p{
 	align-items: baseline;
 	align-items: flex-end;
 }
-.services > *{
-	flex-basis: 500px;
-}
+
 .services div{
 	background-color: rgb(255, 255, 255);
 	border-radius: 20px;
@@ -627,53 +625,6 @@ select::picker(select){
 
 }
 
-@media (max-width: 1000px){
-	.woman{
-		display:none;
-	}
-	h1{
-		width: 90vw;
-	}
-	.p_home{
-		width: 70vw;
-	}
-	.subscribe{
-		margin-left: 50%;
-		translate: -50%;
-		width: 80vw;
-	}
-	.container{
-		margin-top: -85px;
-	}
-	.p1{
-		top: 10%;
-	}
-
-	.container a{
-		top: 42%;
-		right: 27%;
-		padding: 1.8%;
-		padding-inline: 10%;
-		font-family: 'Poppins', sans-serif;
-		border-radius: 5px;
-		border: none;
-		background-color: rgb(246, 127, 63);
-		color: white;
-	}
-
-	.container input{
-		top: 30%;
-		width: 70%;
-		left: 15%;
-		padding: 2%;
-		padding-left: 12px;
-		position: absolute;
-		font-family: 'Poppins', sans-serif;
-		border-radius: 5px;
-		border: none;
-	}	
-}
-
 @media (max-width: 1400px){
 	header{
 		padding: 15px 3%;
@@ -693,9 +644,6 @@ select::picker(select){
 	  --h2-font: 2.3rem;
 	  --p-font: 1rem;
 	  transition: .2s;
-	}
-	.services{
-
 	}
 }
 
@@ -740,6 +688,53 @@ select::picker(select){
 	.list{
 		width: 50%;
 		margin-bottom: 12px;
+	}
+	.woman{
+		display:none;
+	}
+	h1{
+		width: 90vw;
+	}
+	.p_home{
+		width: 70vw;
+	}
+	.subscribe{
+		margin-left: 50%;
+		translate: -50%;
+		width: 80vw;
+	}
+	.container{
+		margin-top: -85px;
+	}
+	.p1{
+		top: 10%;
+	}
+
+	.container a{
+		top: 42%;
+		right: 27%;
+		padding: 1.8%;
+		padding-inline: 10%;
+		font-family: 'Poppins', sans-serif;
+		border-radius: 5px;
+		border: none;
+		background-color: rgb(246, 127, 63);
+		color: white;
+	}
+
+	.container input{
+		top: 30%;
+		width: 70%;
+		left: 15%;
+		padding: 2%;
+		padding-left: 12px;
+		position: absolute;
+		font-family: 'Poppins', sans-serif;
+		border-radius: 5px;
+		border: none;
+	}	
+	.services{
+		flex-wrap: wrap;
 	}
 }
 
