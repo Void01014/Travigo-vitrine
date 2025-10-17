@@ -564,7 +564,7 @@ header.sticky{
 }
 
 form{
-	width: 20%;
+	width: 20vw;
 	flex-wrap: wrap;
 	display: flex;
 	margin-left: 50%;
@@ -572,19 +572,19 @@ form{
 	justify-content: center;
 	align-items: center;
 	gap: 1.5em;
+	padding-inline:0vw;
 }
 form input,
 form textarea{
 	display: inline-block;
-	width: 90%;
-	padding: .5em;
-	padding-left: .5em;
+	width: 100%;
+	padding: 3%;
+	padding-left: 3%;
 	border: none;
 	box-shadow: .01em .01em .5em rgb(0, 0, 0, .25);
 	border-radius: 7px;
 	font-weight: 420;
 	transition: transform 0.5s ease;
-
 }
 form textarea{
 	resize: none;
@@ -600,8 +600,8 @@ form button{
 	cursor: pointer;
 	border-radius: 10px;
 	background-color: #FFF7E9;
-	padding: .5em;
-	padding-inline: 6.5em;
+	padding: 2vw;
+	padding-inline: 5vw;
 	font-weight: 500;
 	box-shadow: .01em .01em 1em rgb(0, 0, 0, .25);
 }
@@ -736,6 +736,18 @@ select::picker(select){
 	.services{
 		flex-wrap: wrap;
 	}
+	form{
+		width: 70vw;
+		flex-wrap: wrap;
+		display: flex;
+		margin-left: 50%;
+		translate: -50%;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em;
+		padding-inline:0vw;
+	}
+	
 }
 
 @media (max-width: 575px){
@@ -756,5 +768,9 @@ select::picker(select){
 	.home{
 		height: 85vh;
 		transition: .2s;
+	}
+	form .contact_send{
+		transform: scale(.8);
+		right: -27%;
 	}
 }
